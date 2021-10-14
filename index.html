@@ -8,13 +8,12 @@
   <div id="invoiceholder">
   <div id="invoice" class="effect2">
     
-    <div id="invoice-top">
+    <div id="invoice-top" style="padding-bottom: 27px">
       <div class="logo">
-      	<img src="./logo.svg" alt="Logo" />
       	<strong style="color: gray">PAYMENT VOUCHER</strong>
       </div>
       <div class="title">
-        <h1>CN #<span class="invoiceVal invoice_num">tst-inv-23</span></h1>
+        <h1>CN #<span class="invoiceVal invoice_num">TVCH-23</span></h1>
         <p>CN Date: <span id="invoice_date">01 Oct 2021</span>
         </p>
       </div><!--End Title-->
@@ -23,30 +22,29 @@
 
     
     <div id="invoice-mid">   
-      <div id="message">
-        <h2>Hello JOYCE WANJIKU KINYANJUI,</h2>
-        <p>Please pay <strong>KES 1,560.00</strong> quoting <strong><mark style="padding: 1px; padding-left: 2px;padding-right: 2px; background-color: #fdff7f91">CRN-OTEwMDQzMzc2OjkxMDA0MzM3Nw==</mark></strong> in your details of payment</p>
-      </div>
-       <!-- <div class="cta-group mobile-btn-group">
-            <a href="javascript:void(0);" class="btn-primary">Approve</a>
-            <a href="javascript:void(0);" class="btn-default">Reject</a>
-        </div>  -->
         <div class="clearfix">
             <div class="col-left">
                 <div class="clientlogo">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="#52ba59" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"/></svg>
                 </div>
                 <div class="clientinfo">
-                    <h2 id="supplier">JOYCE WANJIKU KINYANJUI</h2>
-                    <p><span id="address">Westlands, 48</span><br><span id="city">Nairobi</span><br><span id="country">KE</span> - <span id="zip">12062</span><br><span id="tax_num">555-555-5555</span><br></p>
+                    <h2 id="supplier">UNGA LTD.</h2>
+                    <p>
+                      <span id="address">Bank Name: <strong>ABSA</strong></span><br>
+                      <span id="address">Bank Account: <strong>02231526373939736</strong></span><br>
+                      <span id="address">BIC: <strong>XXXXXXXX</strong></span><br>
+                     <!--  <span id="city">Nairobi</span><br>
+                      <span id="country">KE</span> - <span id="zip">12062</span><br>
+                      <span id="tax_num">555-555-5555</span><br> -->
+                    </p>
                 </div>
             </div>
             <div class="col-right">
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td><span>Total Amount</span><label id="invoice_total">61.2</label></td>
-                            <td><span>Currency</span><label id="currency">EUR</label></td>
+                            <td><span>Total Amount</span><label id="invoice_total">3,580.00</label></td>
+                            <td><span>Currency</span><label id="currency">KES</label></td>
                         </tr>
                         <tr>
                             <td><span>Payment Term</span><label id="payment_term">Bank payment</label></td>
@@ -65,10 +63,8 @@
         <table class="table-main">
           <thead>    
               <tr class="tabletitle">
-                <th>Type</th>
-                <th>Description</th>
-                <th>Quantity</th>
-                <th>Unit Price</th>
+                <th>Invoice ID</th>
+                <th>Amount</th>
                 <th>Taxable Amount</th>
                 <th>Tax Code</th>
                 <th>%</th>
@@ -78,32 +74,28 @@
               </tr>
           </thead>
           <tr class="list-item">
-            <td data-label="Type" class="tableitem">ITEM</td>
-            <td data-label="Description" class="tableitem">Servizio EDI + Traffico mese di novembre 2017</td>
-            <td data-label="Quantity" class="tableitem">46.6</td>
-            <td data-label="Unit Price" class="tableitem">1</td>
-            <td data-label="Taxable Amount" class="tableitem">46.6</td>
-            <td data-label="Tax Code" class="tableitem">DP20</td>
-            <td data-label="%" class="tableitem">20</td>
-            <td data-label="Tax Amount" class="tableitem">9.32</td>
+            <td data-label="Type" class="tableitem">#INV-335278</td>
+            <td data-label="Unit Price" class="tableitem">KES 2,345</td>
+            <td data-label="Taxable Amount" class="tableitem">0.0</td>
+            <td data-label="Tax Code" class="tableitem">DP0</td>
+            <td data-label="%" class="tableitem">0</td>
+            <td data-label="Tax Amount" class="tableitem">0.0</td>
             <td data-label="AWT" class="tableitem">None</td>
-            <td data-label="Total" class="tableitem">55.92</td>
+            <td data-label="Total" class="tableitem">2,345.00</td>
           </tr>
          <tr class="list-item">
-            <td data-label="Type" class="tableitem">ITEM</td>
-            <td data-label="Description" class="tableitem">Traffico mese di novembre 2017 FRESSNAPF TIERNAHRUNGS GMBH riadd. Almo DE</td>
-            <td data-label="Quantity" class="tableitem">4.4</td>
-            <td data-label="Unit Price" class="tableitem">1</td>
-            <td data-label="Taxable Amount" class="tableitem">46.6</td>
-            <td data-label="Tax Code" class="tableitem">DP20</td>
-            <td data-label="%" class="tableitem">20</td>
-            <td data-label="Tax Amount" class="tableitem">9.32</td>
+            <td data-label="Type" class="tableitem">#INV-892938</td>
+            <td data-label="Unit Price" class="tableitem">KES 1,235</td>
+            <td data-label="Taxable Amount" class="tableitem">0.0</td>
+            <td data-label="Tax Code" class="tableitem">DP0</td>
+            <td data-label="%" class="tableitem">0</td>
+            <td data-label="Tax Amount" class="tableitem">0.0</td>
             <td data-label="AWT" class="tableitem">None</td>
-            <td data-label="Total" class="tableitem">55.92</td>
+            <td data-label="Total" class="tableitem">1,235.00</td>
           </tr>
             <tr class="list-item total-row">
-                <th colspan="9" class="tableitem">Grand Total</th>
-                <td data-label="Grand Total" class="tableitem">111.84</td>
+                <th colspan="7" class="tableitem">Grand Total</th>
+                <td data-label="Grand Total" class="tableitem">KES 3,580.00</td>
             </tr>
         </table>
       </div><!--End Table-->
@@ -113,8 +105,13 @@
     </div>  -->
       
     </div><!--End InvoiceBot-->
+     <div id="message" style="margin-left: 20px">
+        <!-- <h2>Hello JOYCE WANJIKU KINYANJUI,</h2> -->
+        <p>Please pay <strong>KES 3,580.00</strong> quoting <strong><mark style="padding: 1px; padding-left: 2px;padding-right: 2px; background-color: #fdff7f91">CRN-OTE345</mark></strong> in your payment details</p>
+      </div>
     <footer>
       <div id="legalcopy" class="clearfix">
+      <img style="height: 25px" src="./logo.svg" alt="Logo" />
         <p class="col-right">Contact Us:
             <span class="email"><a href="mailto:supplier.portal@almonature.com">info@churpy.co</a></span>
         </p>
